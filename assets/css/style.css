@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+/* Eléments de base*/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+	max-width: 192rem;
+}
+
+:root{
+	--orange:#D58C18;
+	--light-orange:#F4A641;
+	--blue:#0B5D64;
+	--light-blue: #387B81;
+	--red: #C12426;
+	--light-red: #CC4C4E;
+	--brown: #070505; 
+	--light-brown: #353333;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#logo{
+	width: 15rem;
+}
+
+/*--Header--*/
+
+header{
+	display: flex;
+	width: 100%;
+	position: fixed;
+    align-items: center;
+	padding: 2rem 10rem;
+	z-index: 2;
+}
+
+.anim-nav {
+    background-color: rgba(7,5,5, 0.6);
+    color: white;
+}
+
+.flexbar{
+	display: flex;
+	width: 192rem;
+}
+
+nav {
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+	font-size: 1.5rem;
+	margin: 0 1rem;
+}
+
+nav div a {
+    margin-left: 2.5rem;
+    text-align: right;
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: white;
+}
+
+nav div a:hover{
+    text-align: right;
+}
+
+nav div a:hover, .active{
+    color: var(--light-orange);
+}
+
+/*-Section accueil*/
+
+.accueil{
+	display: flex;
+	height: 108rem;
+	width: 100%;
+	background-image: url('../img/hero-banner.jpg');
+	background-size: cover;
+    background-position: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.accueil_section_text{
+	padding : 2%;
+	margin: 30% 30% 30% 10%;
+}
+
+.accueil h1{
+	font-size: 6.4rem;
+	font-weight: 700;
+	font-family: 'Pacifico';
+	color: white;
+}
+
+.accueil p{
+	margin-top: 2rem;
+	font-size: 2.4rem;
+	font-weight: 400;
+	line-height: 3.6rem;
+	color: white;
+}
+
+.accueil a{
+	margin-top: 3rem;
+	display: block;
+	width: 16rem;
+	height: 6rem;
+	text-align: center;
+	background-color: rgba(244,166,65, 0.5);
+	padding: 1.5rem 2.5rem;
+	color: var(--light-orange);
+	font-size: 2rem;
+	font-weight: 700;
+	border-radius: 3px;
+	border: 3px solid var(--light-orange);
+	text-transform: uppercase;
+}
+
+.accueil a:hover, .apropos a:hover{
+	background-color: rgba(244,166,65, 0.7);
+	border: 3px solid var(--light-orange);
+}
+
+/*--apropos section*/
+
+.apropos{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+    justify-content: space-between;
+	padding: 5rem 0rem;
+	padding: 5rem 10%;
+}
+
+.apropos_section_title {
+	width: 100%;
+	
+}
+
+.apropos_section_title h2 {
+	text-align: center;
+	font-size: 3rem;
+	font-family: 'pacifico';
+	width: 100%;
+}
+
+.apropos_section_text{
+	width: 50%;
+	padding-right: 5rem;
+	padding-top: 5rem;
+}
+
+.apropos_section_text p{
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: var(--gris-fonce);
+}
+
+.apropos h3{
+	color: var(--orange);
+	font-size: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.apropos_section_photo{
+	width: 50%;
+	padding-left: 5rem;
+	height: 100%;
+	padding-top: 5rem;
+}
+
+.apropos_section_photo img{
+	object-fit: cover;
+	width:100%;
+}
+
+/*--menu section*/
+
+.menu{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #F1EEE9;
+	padding: 5rem 0rem;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.menu_section_text{
+	width: 100%;
+}
+
+.menu_choice{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 5rem 0rem;
+}
+
+.menu_section_text h2{
+	text-align: center;
+	font-size: 3rem;
+	font-family: 'pacifico';
+	width: 100%;
+}
+
+.menu_contenair{
+	display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+	margin-bottom: 10rem;
+}
+
+.menu_article{
+	width:33.33%;
+	height: auto;
+	padding: 5rem 5rem;
+}
+
+.menu_article img{
+	object-fit: cover;
+	width:100%;
+	border-radius: 50%;
+}
+
+.menu_titles h3{
+	padding: 2rem 0;
+	font-family: 'montserrat';
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.menu_titles p{
+	color: #ffffff;
+	font-size: 1.8rem;
+	font-weight: 400;
+}
+
+.link_menu_button{
+    display: block;
+    width: 16rem;
+	height: 6rem;
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+	margin: 0 2.5rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+#menu_entree{
+	border: 3px solid var(--brown);
+	background-color: var(--brown);
+}
+
+#menu_entree:hover{
+	border: 3px solid var(--light-brown);
+	background-color: var(--light-brown);
+}
+
+#menu_plat{
+	border: 3px solid var(--orange);
+	background-color: var(--orange);
+}
+
+#menu_plat:hover{
+	border: 3px solid var(--light-orange);
+	background-color: var(--light-orange);
+}
+
+#menu_dessert{
+	border: 3px solid var(--red);
+	background-color: var(--red);
+}
+
+#menu_dessert:hover{
+	border: 3px solid var(--light-red);
+	background-color: var(--light-red);
+}
+
+#menu_boisson{
+	border: 3px solid var(--blue);
+	background-color: var(--blue);
+}
+
+#menu_boisson:hover{
+	border: 3px solid var(--light-blue);
+	background-color: var(--light-blue);
+}
+	
+/*--citation section*/
+
+.citation{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+    justify-content: space-between;
+	padding: 5rem 0rem;
+	background-color: black;
+	padding: 0 10%;
+}
+
+.citation_section_title {
+	width: 100%;
+	
+}
+
+.citation_section_title h2 {
+	text-align: center;
+	font-size: 3rem;
+	font-family: 'pacifico';
+	width: 100%;
+	
+}
+
+.citation_section_text p{
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: white;
+}
+
+.citation_section_photo{
+	width: 40%;
+	padding-right: 5rem;
+	height: 100%;
+	padding-top: 5rem;
+}
+
+.citation_section_photo img{
+	object-fit: cover;
+	width:100%;
+}
+
+.citation_section_text{
+	margin-bottom: 5rem;
+	width: 40%;
+	padding-left: 5rem;
+	padding-top: 5rem;
+}
+
+/*Services section*/
+
+.services{
+	width: 100%;
+	height: 56.6rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 5rem 0rem;
+}
+
+.services_section_text{
+	margin-bottom: 5rem;
+	width: 100%;
+}
+
+.services_section_text h2{
+	text-align: center;
+	font-size: 3rem;
+	font-family: 'pacifico';
+	width: 100%;
+}
+
+.services_section_text p{
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: var(--gris-fonce);
+}
+
+.icon{
+	display: flex;
+	margin: 0 10%;
+}
+
+.icon article{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 2%;
+}
+
+.icon article div{
+	height: 13rem;
+	width: 13rem;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10rem;
+}
+
+.icon article  div i{
+	font-size: 8rem;
+	color: var(--brown);
+}
+
+.icon article  div i:hover{
+	color: var(--light-orange);
+}
+
+.icon_title{
+	margin-top: 2.4rem;
+	font-size: 2.4rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+article p{
+	color: var(--gris-fonce);
+	font-size: 1.6rem;
+	margin-bottom: 2rem;
+}
+
+#reserver_orange_button{
+	border: 3px solid var(--orange);
+	background-color: var(--orange);
+}
+
+#reserver_orange_button:hover{
+	border: 3px solid var(--light-orange);
+	background-color: var(--light-orange);
+}
+
+#reserver_red_button{
+	border: 3px solid var(--red);
+	background-color: var(--red);
+}
+
+#reserver_red_button:hover{
+	border: 3px solid var(--light-red);
+	background-color: var(--light-red);
+}
+
+#reserver_blue_button{
+	border: 3px solid var(--blue);
+	background-color: var(--blue);
+}
+
+#reserver_blue_button:hover{
+	border: 3px solid var(--light-blue);
+	background-color: var(--light-blue);
+}
+
+#orange_icon_bg{
+	background-color: var(--orange);
+}
+
+#red_icon_bg{
+	background-color: var(--red);
+}
+
+#blue_icon_bg{
+	background-color: var(--blue);
+}
+
+/*Contact section*/
+
+.contact{
+	display: flex;
+	height: 44.8rem;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 5rem 0rem;
+}
+
+.contact h2{
+	font-size: 4.8rem;
+}
+
+.contact p{
+	margin-top: 2rem;
+	color: var(--gris-fonce);
+	font-size: 1.8rem;
+}
+
+.contact form{
+	width: auto;
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	font-size: 2rem;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.contact form input{
+	width: 43.2rem;
+	margin-right: 5rem;
+	background-color: var(--gris-clair);
+	border: none;
+	line-height: 5.4rem;
+	font-size: 2rem;
+	height: 6rem;
+	font-weight: 400;
+	font: 2rem;
+	font-family: 'Montserrat';
+	padding: 1.5rem 2.5rem;
+}
+
+/* Buttons for all page*/
+
+.button{
+    display: block;
+    width: 16rem;
+	height: 6rem;
+    text-align: center;
+    background-color: var(--orange);
+    padding: 1.5rem 2.5rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 3px;
+    border: 3px solid var(--orange);
+    text-transform: uppercase;
+	margin-top: 3rem;
+}
+
+a.button:hover{
+    background-color: var(--light-orange);
+	border: 3px solid var(--light-orange);
+	color: #ffffff;
+}
+
+/*--Footer*/
+
+footer{
+	background-color: var(--gris-fonce);
+	text-align: center;
+	height: 9rem;
+	color: white;
+	font-size: 1.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* --- Responsive --- */
+
+/* --- Tablettes--- */
+@media screen and (max-width: 1080px){
+
+	header {
+		padding: 2rem 5rem;
+	}
+
+	.apropos {
+		flex-direction: column;
+	}
+	
+	.apropos article {
+		width: 100%;
+	}
+
+	.apropos_section_text {
+		padding: 0 5rem;
+		margin-bottom: 2rem;
+		width: 100%;
+	}
+
+	.apropos_section_photo {
+		padding: 0 5rem;
+		margin-bottom: 2rem;
+		width: 100%;
+	}
+
+	.menu_section_text {
+		margin-bottom: 0;
+	}
+
+	.menu_article {
+		width: 100%;
+		padding: 1rem 5rem;
+	}
+	
+	.menu_section_text {
+		padding: 0 5rem;
+		margin-bottom: 2rem;
+	}
+
+	.menu_section_text h2 {
+		font-size: 3rem;
+	}
+
+	
+}
+
+/* --- Smartphones --- */
+@media screen and (max-width: 780px){
+	.flexbar {
+		flex-direction: column;
+	}
+
+	nav div a {
+		margin-left: 1rem;
+		font-size: 1rem;
+	}
+
+	.accueil_section_text {
+		padding: 2rem;
+		text-align: center;
+	}
+
+	.accueil h1 {
+		font-size: 4rem;
+	}
+
+	.accueil a {
+		width: 100%;
+		margin: 2rem 0 0 0;
+		font-size: 1.5rem;
+	}
+
+	.accueil p {
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+
+	.apropos {
+		flex-direction: column;
+	}
+	
+	.apropos article {
+		width: 100%;
+	}
+
+	.apropos_section_text {
+		padding: 0 5rem;
+		margin-bottom: 2rem;
+	}
+
+	.menu_section_text {
+		margin-bottom: 0;
+	}
+
+	.menu_article {
+		width: 100%;
+		padding: 1rem 5rem;
+	}
+	
+	.menu_section_text {
+		padding: 0 5rem;
+		margin-bottom: 2rem;
+	}
+
+	.menu_section_text h2 {
+		font-size: 3rem;
+	}
+
+	.services {
+		height: auto;
+		padding: 5rem 5rem;
+	}
+
+	.services_section_text h2 {
+		font-size: 3rem;
+	}
+
+	.icon {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.icon_title {
+		font-size: 2rem;
+	}
+
+	.contact {
+		padding: 5rem;
+	}
+
+	.contact h2 {
+		font-size: 3rem;
+	}
+
+	.contact form {
+		flex-direction: column;
+	}
+
+	.contact form input {
+		width: 20rem;
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+  
+  }
+  
