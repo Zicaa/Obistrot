@@ -36,7 +36,7 @@
 		</div>
 	</section>
 
-	<!--Section apropos-->
+	<!--Section A propos-->
 	<section id="apropos" class="apropos">
 		<div class="apropos_section_title">
 			<h2>A propos de nous</h2>
@@ -67,13 +67,13 @@
 			<a href="#contact" class="button">Contact</a>						
 		</div>
 	
-		<!--apropos photo-->
+		<!--A propos photo-->
 		<div class="apropos_section_photo">
 			<img src="./assets/img/life-style.jpg" alt="photo du cuisinier d'O'Bistrot" title="photo du cuisinier d'O'Bistrot">
 		</div>
 	</section>
 	
-	<!--menu section -->
+	<!--Section menu -->
 	<section id="menus" class="menu">
 		<div class="menu_section_text">
 			<h2>Nos menus</h2>
@@ -87,40 +87,40 @@
 			<a href="#menu_boisson.html" class="link_menu_button" id="menu_boisson">Boissons</a>
 		</div>
 	
-		<!--menu-->
+		<!--Menu-->
 		<div class="menu_contenair">
 			<article class="menu_article">
-				<img src="./assets/img/tacos.jpg" alt="photo illustrative de tacos" title="photo illustrative de tacos">
+				<a href="./assets/img/tacos.jpg" target="_blank"><img src="./assets/img/tacos.jpg" alt="photo illustrative de tacos" title="photo illustrative de tacos"></a>
 				<div class="menu_titles">
 					<h3>Tacos</h3>
 				</div>
 			</article>
 			<article class="menu_article">
-				<img src="./assets/img/pasta.jpg" alt="photo illustrative d'un plat de pâtes" title="photo illustrative d'un plat de pâtes">
+				<a href="./assets/img/pasta.jpg" target="_blank"><img src="./assets/img/pasta.jpg" alt="photo illustrative d'un plat de pâtes" title="photo illustrative d'un plat de pâtes"></a>
 				<div class="menu_titles">
 					<h3>Pâtes</h3>
 				</div>
 			</article>
 			<article class="menu_article">
-				<img src="./assets/img/patisserie.jpg" alt="photo illustrative de pâtisseries" title="photo illustrative de pâtisseries">
+				<a href="./assets/img/patisserie.jpg" target="_blank"><img src="./assets/img/patisserie.jpg" alt="photo illustrative de pâtisseries" title="photo illustrative de pâtisseries"></a>
 				<div class="menu_titles">
 					<h3>Pâtisseries</h3>
 				</div>
 			</article>
 			<article class="menu_article">
-				<img src="./assets/img/plat.jpg" alt="photo illustrative d'un plat traditionnel jamaïcain" title="photo illustrative d'un plat traditionnel jamaïcain">
+				<a href="./assets/img/plat.jpg" target="_blank"><img src="./assets/img/plat.jpg" alt="photo illustrative d'un plat traditionnel jamaïcain" title="photo illustrative d'un plat traditionnel jamaïcain"></a>
 				<div class="menu_titles">
 					<h3>Plats traditionnels</h3>
 				</div>
 			</article>
 			<article class="menu_article">
-				<img src="./assets/img/viande.jpg" alt="photo illustrative d'un plat de viande" title="photo illustrative d'un plat de viande">
+				<a href="./assets/img/viande.jpg" target="_blank"><img src="./assets/img/viande.jpg" alt="photo illustrative d'un plat de viande" title="photo illustrative d'un plat de viande"></a>
 				<div class="menu_titles">
 					<h3>Viandes</h3>
 				</div>
 			</article>
 			<article class="menu_article">
-				<img src="./assets/img/coctails.jpg" alt="photo illustrative d'un verre à coctails" title="photo illustrative d'un verre à coctails">
+				<a href="./assets/img/coctails.jpg" target="_blank"><img src="./assets/img/coctails.jpg" alt="photo illustrative d'un verre à coctails" title="photo illustrative d'un verre à coctails"></a>
 				<div class="menu_titles">
 					<h3>Cocktails</h3>
 				</div>
@@ -132,15 +132,18 @@
 	<!--Section le mot du chef-->
 	<section id="citation" class="citation">
 		<div class="citation_section_title">
-			<h2>A propos de nous</h2>
+			<h2>Le mot du chef</h2>
 		</div>
-		<!--citation photo-->
-		<div class="apropos_section_photo">
-			<img src="./assets/img/life-style.jpg" alt="photo du cuisinier d'O'Bistrot" title="photo du cuisinier d'O'Bistrot">
+		<!--Citation photo-->
+		<div class="citation_section_photo">
+			<img src="./assets/img/Portrait chef.png" alt="photo du cuisinier d'O'Bistrot" title="photo du cuisinier d'O'Bistrot">
 		</div>
 		<div class="citation_section_text">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus viverra molestie justo, 
-				ut iaculis neque porta vel.</p>					
+			<blockquote>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus viverra molestie justo, 
+					ut iaculis neque porta vel."</p>
+				<footer><cite>John Doe - Chef cuisinier</cite></footer>
+			</blockquote>					
 		</div>
 	</section>
 
@@ -177,16 +180,35 @@
 				<a href="#contact" class="button" id="reserver_blue_button">Réserver</a>
 			</article>
 		</div>
+
+	</section>
+
+	<!--Section avis-->
+	<section id="avis" class="avis">
+		<div class="avis_section_title">
+			<h2>Les témoignages de nos clients</h2>
+		</div>
+		<!--Avis photo-->
+		<div class="avis_section_photo">
+			<img src="./assets/img/avis-banner.jpg" alt="photo des avis clients" title="photo des avis clients">
+		</div>
 	</section>
 
 	<!--Contact section-->
 	<section id="contact" class="contact">
+		<div>
+			<h2>Contactez-nous</h2>
+		</div>
+		<form action="send.php" method="GET">
+			<input type="email" name="email" id="email" placeholder="Your Email">
+			<a href="#" class="button">Try to win</a>
+		</form>	
+	</section>
 
 	</section>
 
 	<!--Footer-->
 	<footer>
-		<p>copyright © 2023, Japan, all rights reserved</p>
 
 		<script src="assets/js/navbar.js"></script>
 	</footer>
