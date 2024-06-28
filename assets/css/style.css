@@ -97,6 +97,10 @@ nav div a:hover, .active{
 	justify-content: center;
 }
 
+.hero-banner-entrees{
+	background-image: url('../img/hero-banner-entrees.png');
+}
+
 .accueil_section_text{
 	padding : 2%;
 	margin: 30% 30% 30% 10%;
@@ -271,44 +275,10 @@ nav div a:hover, .active{
     text-transform: uppercase;
 }
 
-#menu_entree{
-	border: 3px solid var(--brown);
-	background-color: var(--brown);
-}
-
-#menu_entree:hover{
-	border: 3px solid var(--light-brown);
-	background-color: var(--light-brown);
-}
-
-#menu_plat{
-	border: 3px solid var(--orange);
-	background-color: var(--orange);
-}
-
-#menu_plat:hover{
-	border: 3px solid var(--light-orange);
-	background-color: var(--light-orange);
-}
-
-#menu_dessert{
-	border: 3px solid var(--red);
-	background-color: var(--red);
-}
-
-#menu_dessert:hover{
-	border: 3px solid var(--light-red);
-	background-color: var(--light-red);
-}
-
-#menu_boisson{
-	border: 3px solid var(--blue);
-	background-color: var(--blue);
-}
-
-#menu_boisson:hover{
-	border: 3px solid var(--light-blue);
-	background-color: var(--light-blue);
+.link_menu_button:hover{
+	background-color: white;
+	border: 3px solid white;
+	color: var(--light-orange);
 }
 	
 /*--Section citation*/
@@ -434,45 +404,15 @@ article p{
 	margin-bottom: 2rem;
 }
 
-#reserver_orange_button{
-	border: 3px solid var(--orange);
+.orange_icon_bg{
 	background-color: var(--orange);
 }
 
-#reserver_orange_button:hover{
-	border: 3px solid var(--light-orange);
-	background-color: var(--light-orange);
-}
-
-#reserver_red_button{
-	border: 3px solid var(--red);
+.red_icon_bg{
 	background-color: var(--red);
 }
 
-#reserver_red_button:hover{
-	border: 3px solid var(--light-red);
-	background-color: var(--light-red);
-}
-
-#reserver_blue_button{
-	border: 3px solid var(--blue);
-	background-color: var(--blue);
-}
-
-#reserver_blue_button:hover{
-	border: 3px solid var(--light-blue);
-	background-color: var(--light-blue);
-}
-
-#orange_icon_bg{
-	background-color: var(--orange);
-}
-
-#red_icon_bg{
-	background-color: var(--red);
-}
-
-#blue_icon_bg{
+.blue_icon_bg{
 	background-color: var(--blue);
 }
 
@@ -623,9 +563,29 @@ iframe{
 }
 
 a.button:hover{
-    background-color: var(--light-orange);
-	border: 3px solid var(--light-orange);
-	color: #ffffff;
+    background-color: white;
+	border: 3px solid white;
+	color: var(--light-orange);
+}
+
+.brown{
+	border: 3px solid var(--brown);
+	background-color: var(--brown);
+}
+
+.orange{
+	border: 3px solid var(--orange);
+	background-color: var(--orange);
+}
+
+.red{
+	border: 3px solid var(--red);
+	background-color: var(--red);
+}
+
+.blue{
+	border: 3px solid var(--blue);
+	background-color: var(--blue);
 }
 
 /*--Footer*/
