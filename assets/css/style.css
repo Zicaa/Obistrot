@@ -101,6 +101,18 @@ nav div a:hover, .active{
 	background-image: url('../img/hero-banner-entrees.png');
 }
 
+.hero-banner-plats{
+	background-image: url('../img/hero-banner-plats.png');
+}
+
+.hero-banner-desserts{
+	background-image: url('../img/hero-banner-desserts.png');
+}
+
+.hero-banner-boissons{
+	background-image: url('../img/hero-banner-boissons.png');
+}
+
 .accueil_section_text{
 	padding : 2%;
 	margin: 30% 30% 30% 10%;
@@ -280,7 +292,50 @@ nav div a:hover, .active{
 	border: 3px solid white;
 	color: var(--light-orange);
 }
-	
+
+/* Section menu détaillé*/
+.card {
+	background-color: white;
+	width: 100%;
+	border-radius: 5rem;
+	display: flex;
+	flex-direction: row;
+	margin: 2.5rem 0;
+}
+
+.image-card{
+	border-radius: 50%;
+	width: 25%;
+	margin: 5rem;
+}
+
+.card_text {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.card_text h4{
+	width: 100%;
+	text-align: start;
+}
+
+.card_text p {
+	font-size: 1.6rem;
+	width: 80%;
+	text-align: start;
+}
+
+.card_text_price {
+	font-weight: bold;
+	display: flex;
+	text-align: end;
+	width: 20%;
+	margin-bottom: 2rem;
+}
+
 /*--Section citation*/
 
 .citation{
@@ -398,7 +453,7 @@ nav div a:hover, .active{
 	margin-bottom: 2rem;
 }
 
-article p{
+.icon article p{
 	color: var(--gris-fonce);
 	font-size: 1.6rem;
 	margin-bottom: 2rem;
@@ -544,7 +599,7 @@ iframe{
 }
 
 
-/* Buttons for all page*/
+/* Boutons */
 
 .button{
     display: block;

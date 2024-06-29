@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>O'Bistrot</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="icon" type="image/png" href="./assets/img/obistrot.png">
+</head>
+<body>
+
+	<!--Header-->
+	<header>
+        <nav class="flexbar" >
+            <img src="./assets/img/obistrot.png" alt="Logo O'Bistrot" title="logo du restaurant O'Bistrot" id="logo"><a href="index.html"></a>
+            <div>
+				<a href="index.html#accueil" class="active">Accueil</a>
+				<a href="index.html#apropos">A propos de nous</a>
+				<a href="index.html#menus">Nos menus</a>
+				<a href="index.html#citation">Le mot du chef</a>
+				<a href="index.html#services">Nos services</a>
+				<a href="index.html#avis">Avis de nos clients</a>
+				<a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+	<!--Section accueil-->
+	<section id="accueil" class="accueil hero-banner-boissons">
+		<div class="accueil_section_text">
+			<h1>Nos boissons</h1>
+			<p>Cuisine jamaïcaine traditionnelle.</p>
+			<p>Lorem ipsum dolor sit amet. Ex autem soluta aut nulla nisi est quisquam ullam et pariatur voluptatibus qui eligendi adipisci.</p>
+			<a href="#contact" class="button">Réserver</a>
+		</div>
+	</section>
+
+	<!--Section menu -->
+	<section id="menus" class="menu">
+		<div class="menu_section_text">
+			<h2>Nos menus</h2>
+		</div>
+
+		<!--Liens vers chaque menu-->
+		<div class="menu_choice">
+			<a href="menu_entrees.html" class="link_menu_button brown" id="menu_entree">Entrées</a>
+			<a href="menu_plats.html" class="link_menu_button orange" id="menu_plat">Plats</a>
+			<a href="menu_desserts.html" class="link_menu_button red" id="menu_dessert">Désserts</a>
+			<a href="menu_boissons.html" class="link_menu_button blue" id="menu_boisson">Boissons</a>
+		</div>
+	
+		<!--Menu-->
+		<div class="menu_contenair">
+			<article class="card">
+				<img src="./assets/img/Cocktail1.jpg" class="image-card" alt="photo illustrative de brochettes de viande" title="photo illustrative de brochettes de viande">
+				<div class="card_text">
+					<h4>Coctail 1</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<div class="card_text_price">25€</div>
+				</div>
+			</article>
+			<article class="card">
+				<img src="./assets/img/Coctail2.jpg" class="image-card" alt="photo illustrative d'un plat à la tomate" title="photo illustrative d'un plat à la tomate">
+				<div class="card_text">
+					<h4>Plat 2</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<div class="card_text_price">25€</div>
+				</div>
+			</article>
+			<article class="card">
+				<img src="./assets/img/Coctail3.jpg" class="image-card" alt="photo illustrative d'un plat traditionnel" title="photo illustrative d'un plat traditionnel">
+				<div class="card_text">
+					<h4>Plat 3</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<div class="card_text_price">25€</div>
+				</div>
+			</article>
+			<article class="card">
+				<img src="./assets/img/Boissons_froides.jpg" class="image-card" alt="photo illustrative d'un plat traditionnel" title="photo illustrative d'un plat traditionnel">
+				<div class="card_text">
+					<h4>Plat 4</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<div class="card_text_price">25€</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<div class="card_text_price">25€</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<div class="card_text_price">25€</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<div class="card_text_price">25€</div>
+				</div>
+			</article>
+            <article class="card">
+				<img src="./assets/img/plat5.jpg" class="image-card" alt="photo illustrative d'un plat traditionnel" title="photo illustrative d'un plat traditionnel">
+				<div class="card_text">
+					<h4>Plat 5</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<div class="card_text_price">25€</div>
+				</div>
+			</article>
+		</div>
+		<a href="#contact" class="button">Réserver</a>
+	</section>
+
+	<!--Contact section-->
+	<section id="contact" class="contact">
+		<div class="contact_section_text"></div>>
+			<h2>Contactez-nous</h2>
+		</div>
+		<form action="send.php" method="GET">
+			<input type="nom" name="nom" id="nom" placeholder="Nom">
+			<input type="prenom" name="prenom" id="prenom" placeholder="Prénom">
+			<input type="email" name="email" id="email" placeholder="Email">
+			<input type="telephone" name="telephone" id="telephone" placeholder="Téléphone">
+			<input type="text" name="text" id="text" placeholder="Votre demande">
+			<a href="#" class="button">Envoyer</a>
+		</form>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.7298575279938!2d3.7544709761658286!3d43.44535767111261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6b5396dc9d5b9%3A0xcf8fd13df00196a9!2sEMBS%20INFORMATIQUE!5e0!3m2!1sfr!2sfr!4v1719570537551!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer">
+			<div class="footer_element">
+				<h4>O'Bistrot</h4>
+				<ul>
+					<li>Adresse 1,</li>
+					<li>CP VILLE</li>
+					<li>01 02 03 04 05</li>
+				</ul>
+			</div>
+			<div class="footer_element">
+				<p class="footer_text">Horaires d’ouverture :</p>
+				<ul>
+					<li>Du mardi au samedi </li>
+					<li>De 10h30 à 13h30 et de 14h00 à 19h00</li>
+				</ul>
+			</div>
+			<div class="footer_element">
+				<ul class="logos">
+					<li><a href="#" target="_blank"><img src="./assets/img/linkedin.png" alt="photo illustrative d'un plat traditionnel jamaïcain" title="photo illustrative d'un plat traditionnel jamaïcain"></a></li>
+					<li><a href="#" target="_blank"><img src="./assets/img/instagram.png" alt="photo illustrative d'un plat traditionnel jamaïcain" title="photo illustrative d'un plat traditionnel jamaïcain"></a></li>
+					<li><a href="#" target="_blank"><img src="./assets/img/facebook.png" alt="photo illustrative d'un plat traditionnel jamaïcain" title="photo illustrative d'un plat traditionnel jamaïcain"></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<script src="assets/js/navbar.js"></script>
+
+	</footer>
+</body>
+</html>
