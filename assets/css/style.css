@@ -275,7 +275,7 @@ nav div a:hover, .active{
 	font-weight: 400;
 }
 
-.link_menu_button{
+.custom_button{
     display: block;
     width: 16rem;
 	height: 6rem;
@@ -287,12 +287,6 @@ nav div a:hover, .active{
     font-weight: 700;
     border-radius: 3px;
     text-transform: uppercase;
-}
-
-.link_menu_button:hover{
-	background-color: white;
-	border: 3px solid white;
-	color: var(--light-orange);
 }
 
 /* Section menu détaillé*/
@@ -629,9 +623,9 @@ iframe {
 }
 
 a.button:hover{
-    background-color: white;
-	border: 3px solid white;
-	color: var(--light-orange);
+    background-color: var(--light-orange);
+	border: 3px solid var(--orange);
+	color: white;
 }
 
 .brown{
@@ -639,9 +633,21 @@ a.button:hover{
 	background-color: var(--brown);
 }
 
+.brown:hover{
+	background-color: var(--light-brown);
+	border: 3px solid var(--brown);
+	color: var(--light-orange);
+}
+
 .orange{
 	border: 3px solid var(--orange);
 	background-color: var(--orange);
+}
+
+.orange:hover{
+	background-color: var(--light-orange);
+	border: 3px solid var(--orange);
+	color: var(--brown);
 }
 
 .red{
@@ -649,9 +655,21 @@ a.button:hover{
 	background-color: var(--red);
 }
 
+.red:hover{
+	background-color: var(--light-red);
+	border: 3px solid var(--red);
+	color: var(--light-orange);
+}
+
 .blue{
 	border: 3px solid var(--blue);
 	background-color: var(--blue);
+}
+
+.blue:hover{
+	background-color: var(--light-blue);
+	border: 3px solid var(--blue);
+	color: var(--light-orange);
 }
 
 /*--Footer*/
@@ -759,7 +777,7 @@ a.button:hover{
 	width:100%;
 	}
 
-	.link_menu_button {
+	.custom_button {
 		padding: 1.5rem 1rem;
 	}
 
@@ -795,7 +813,7 @@ a.button:hover{
 		margin: 0;
 	}
 
-	.link_menu_button {
+	.custom_button {
 		width: 100%;
 		margin: 2rem 0;
 	}
