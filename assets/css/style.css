@@ -264,7 +264,7 @@ nav div a:hover, .active{
 
 .menu_titles h3{
 	padding: 2rem 0;
-	font-family: 'montserrat';
+	font-family: 'Pacifico';
 	font-size: 2.5rem;
 	font-weight: 700;
 }
@@ -320,7 +320,7 @@ nav div a:hover, .active{
 }
 
 .card_text h4{
-	font-family: 'Montserrat';
+	font-family: 'Pacifico';
 	font-size: 3rem;
 	width: 100%;
 	text-align: start;
@@ -340,8 +340,9 @@ nav div a:hover, .active{
 	text-align: end;
 	width: 20%;
 	margin-bottom: 2rem;
-	font-family: 'Montserrat';
-	font-size: 2rem;
+	font-family: 'Pacifico';
+	font-size: 2.5rem;
+	color: var(--brown);
 }
 
 /*--Section citation*/
@@ -828,7 +829,6 @@ a.button:hover{
 	iframe {
 		width: 100%;
 		margin: 1rem 0;
-		display: none;
 	}
 
 	#nom{
@@ -861,6 +861,8 @@ a.button:hover{
 		flex-direction: column;
 		margin: 0;
 		padding: 0;
+		align-items: center;
+		text-align: center;
 	}
 
 	.footer_element{
@@ -987,7 +989,39 @@ a.button:hover{
 		width: 30rem;
 	}
 
+	.card {
+		flex-direction: column;
+		align-items: center;
+	}
 
-  
-  }
+	.image-card {
+		width: 100%;
+		padding: 2rem;
+		margin: 0;
+	}
+
+	.card_text h4 {
+		text-align: center;
+	}
+
+	.card_text {
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+	}
+
+	.card_text p {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.card_text_price {
+		display: block;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+}
   
