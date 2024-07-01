@@ -131,6 +131,7 @@ nav div a:hover, .active{
 	font-weight: 400;
 	line-height: 3.6rem;
 	color: white;
+	text-align: justify;
 }
 
 .accueil a{
@@ -187,6 +188,7 @@ nav div a:hover, .active{
 	font-size: 1.6rem;
 	font-weight: 400;
 	color: var(--gris-fonce);
+	text-align: justify;
 }
 
 .apropos h3{
@@ -423,6 +425,7 @@ nav div a:hover, .active{
 
 .icon{
 	display: flex;
+	width: 100%;
 }
 
 .icon article{
@@ -457,13 +460,13 @@ nav div a:hover, .active{
 	font-size: 2.4rem;
 	font-weight: 700;
 	margin-bottom: 2rem;
-	text-overflow: ellipsis;
 }
 
 .icon article p{
 	color: var(--gris-fonce);
 	font-size: 1.6rem;
 	margin-bottom: 2rem;
+	text-align: justify;
 }
 
 .orange_icon_bg{
@@ -546,13 +549,13 @@ nav div a:hover, .active{
     text-align: left;
     font-size: 2rem;
     align-items: end;
-    justify-content: space-evenly;
+    justify-content: space-between;
 	flex-wrap: wrap;
 }
 
 .contact form input{
 	align-items: end;
-	margin: 2rem;
+	margin: 2rem 0;
 	background-color: white;
 	border: none;
 	line-height: 5.4rem;
@@ -565,23 +568,23 @@ nav div a:hover, .active{
 }
 
 #nom{
-	width:40%;
+	width:45%;
 }
 
 #prenom{
-	width:40%;
+	width:45%;
 }
 
 #email{
-	width:40%;
+	width:45%;
 }
 
 #telephone{
-	width:40%;
+	width:45%;
 }
 
 #text{
-	width:90%;
+	width:100%;
 	height: 20rem;
 }
 
@@ -601,10 +604,10 @@ nav div a:hover, .active{
 	margin-top: 3rem;
 }
 
-iframe{
-	width: 50%;
+iframe {
+    width: 43%;
+    margin: 0 0 0 5rem;
 }
-
 
 /* Boutons */
 
@@ -798,7 +801,60 @@ a.button:hover{
 
 	.button {
 		width: 100%;
-		margin-top: 0;
+		margin: 1rem 0;
+	}
+
+	.contact {
+		padding: 5rem 10%;
+		flex-direction: column;
+	}
+
+	.contact h2 {
+		font-size: 3rem;
+	}
+
+	.contact form {
+		flex-direction: column;
+		width: 100%;
+		align-items: flex-start;
+	}
+
+	.contact form input {
+		width: 20rem;
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+
+	iframe {
+		width: 100%;
+		margin: 1rem 0;
+		display: none;
+	}
+
+	#nom{
+		width:100%;
+		margin: 1rem 0;
+	}
+	
+	#prenom{
+		width:100%;
+		margin: 1rem 0;
+	}
+	
+	#email{
+		width:100%;
+		margin: 1rem 0;
+	}
+	
+	#telephone{
+		width:100%;
+		margin: 1rem 0;
+	}
+	
+	#text{
+		width:100%;
+		height: 20rem;
+		margin: 1rem 0;
 	}
 
 	.footer {
@@ -890,6 +946,14 @@ a.button:hover{
 		flex-direction: column;
 	}
 
+	.citation_section_photo {
+		width: 100%;
+	}
+
+	.citation_section_text {
+		width: 100%;
+	}
+
 	.citation_section_text p {
 		font-size: 1.5rem;
 		padding: 2rem 0;
@@ -910,7 +974,7 @@ a.button:hover{
 	}
 
 	.icon article {
-        margin: 2rem 0;
+        margin: 2.5rem 0;
         padding: 0 10%;
     }
 
@@ -923,56 +987,6 @@ a.button:hover{
 		width: 30rem;
 	}
 
-	.contact {
-		padding: 5rem;
-		flex-direction: column;
-	}
-
-	.contact h2 {
-		font-size: 3rem;
-	}
-
-	.contact form {
-		flex-direction: column;
-		width: 100%;
-		align-items: flex-start;
-	}
-
-	.contact form input {
-		width: 20rem;
-		margin-right: 0;
-		margin-bottom: 2rem;
-	}
-
-	iframe {
-		width: 100%;
-	}
-
-	#nom{
-		width:100%;
-		margin: 1rem 0;
-	}
-	
-	#prenom{
-		width:100%;
-		margin: 1rem 0;
-	}
-	
-	#email{
-		width:100%;
-		margin: 1rem 0;
-	}
-	
-	#telephone{
-		width:100%;
-		margin: 1rem 0;
-	}
-	
-	#text{
-		width:100%;
-		height: 20rem;
-		margin: 1rem 0;
-	}
 
   
   }
