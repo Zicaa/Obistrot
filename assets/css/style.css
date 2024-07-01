@@ -161,7 +161,7 @@ nav div a:hover, .active{
 	flex-wrap: wrap;
 	width: 100%;
     justify-content: space-between;
-	padding: 5rem 0rem;
+	align-items: center;
 	padding: 5rem 10%;
 }
 
@@ -318,14 +318,18 @@ nav div a:hover, .active{
 }
 
 .card_text h4{
+	font-family: 'Montserrat';
+	font-size: 3rem;
 	width: 100%;
 	text-align: start;
+	margin-bottom: 2rem;
 }
 
 .card_text p {
-	font-size: 1.6rem;
 	width: 80%;
 	text-align: start;
+	font-family: 'Montserrat';
+	font-size: 2rem;
 }
 
 .card_text_price {
@@ -334,6 +338,8 @@ nav div a:hover, .active{
 	text-align: end;
 	width: 20%;
 	margin-bottom: 2rem;
+	font-family: 'Montserrat';
+	font-size: 2rem;
 }
 
 /*--Section citation*/
@@ -697,6 +703,11 @@ a.button:hover{
 		padding: 2rem 5rem;
 	}
 
+	.accueil_section_text {
+		padding: 0;
+		margin: 30% 10%;
+	}
+
 	.apropos {
 		flex-direction: column;
 	}
@@ -705,14 +716,18 @@ a.button:hover{
 		width: 100%;
 	}
 
+	.apropos_section_title h2 {
+		margin-bottom: 2rem;
+	}
+
 	.apropos_section_text {
-		padding: 0 5rem;
+		padding: 0;
 		margin-bottom: 2rem;
 		width: 100%;
 	}
 
 	.apropos_section_photo {
-		padding: 0 5rem;
+		padding: 0;
 		margin-bottom: 2rem;
 		width: 100%;
 	}
@@ -722,7 +737,7 @@ a.button:hover{
 	}
 
 	.menu_article {
-		width: 100%;
+		width: 50%;
 		padding: 1rem 5rem;
 	}
 	
@@ -735,7 +750,76 @@ a.button:hover{
 		font-size: 3rem;
 	}
 
+	.menu_choice{
+	width:100%;
+	}
+
+	.icon_title {
+		font-size: 1.5rem;
+	}
+
+	.link_menu_button {
+		padding: 1.5rem 1rem;
+	}
+
+	#nom{
+		width:100%;
+	}
 	
+	#prenom{
+		width:100%;
+	}
+	
+	#email{
+		width:100%;
+	}
+	
+	#telephone{
+		width:100%;
+	}
+	
+	#text{
+		width:100%;
+	}
+	
+}
+
+@media screen and (max-width: 920px){
+	.accueil a {
+		width: 100%;
+	}
+
+	.menu_choice {
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.link_menu_button {
+		width: 100%;
+		margin: 2rem 0;
+	}
+
+	.button {
+		width: 100%;
+	}
+
+	.footer {
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+	}
+
+	.footer_element{
+		margin : 2rem 10%;
+	}
+
+	.footer_element h4 {
+		padding-bottom: 1rem;
+	}
+
+	.footer_text {
+		padding-bottom: 1rem;
+	}
 }
 
 /* --- Smartphones --- */
