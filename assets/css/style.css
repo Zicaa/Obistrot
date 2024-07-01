@@ -441,15 +441,6 @@ nav div a:hover, .active{
 	padding: 10rem;
 }
 
-.icon article  div i{
-	font-size: 8rem;
-	color: var(--brown);
-}
-
-.icon article  div i:hover{
-	color: var(--light-orange);
-}
-
 .icon_title{
 	margin-top: 2.4rem;
 	font-size: 2.4rem;
@@ -464,16 +455,42 @@ nav div a:hover, .active{
 	text-align: justify;
 }
 
-.orange_icon_bg{
+.icon article  div i{
+	font-size: 8rem;
+	color: white;
+	padding: 10rem
+}
+
+.icon article  div i:hover{
+	color: var(--light-orange);
+}
+
+.icon article  .customicon:hover{
+	color: var(--brown);
+}
+
+.orange_icon_bg {
 	background-color: var(--orange);
+}
+
+.orange_icon_bg:hover{
+	background-color: var(--light-orange);
 }
 
 .red_icon_bg{
 	background-color: var(--red);
 }
 
+.red_icon_bg:hover{
+	background-color: var(--light-red);
+}
+
 .blue_icon_bg{
 	background-color: var(--blue);
+}
+
+.blue_icon_bg:hover{
+	background-color: var(--light-blue);
 }
 
 /*Section avis*/
