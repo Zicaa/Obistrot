@@ -260,6 +260,13 @@ nav div a:hover, .active{
 	object-fit: cover;
 	width:100%;
 	border-radius: 50%;
+	transition: transform .1s;
+}
+
+.menu_article img:hover{
+	-ms-transform: scale(1.1); 
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .menu_titles h3{
@@ -303,6 +310,13 @@ nav div a:hover, .active{
 	border-radius: 50%;
 	width: 25%;
 	margin: 5rem;
+	transition: transform .1s;
+}
+
+.image-card:hover{
+	-ms-transform: scale(1.1); 
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .card_text {
