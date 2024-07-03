@@ -12,9 +12,9 @@
 
 	<!--Header-->
 	<header>
-        <nav class="flexbar" >
+        <nav class="flexbar" id="myTopnav">
             <a href="index.html"><img src="./assets/img/obistrot.png" alt="Logo O'Bistrot" title="logo du restaurant O'Bistrot" id="logo"><a href="index.html"></a>
-            <div>
+            <div class="main-navbar">
 				<a href="index.html#accueil" class="active">Accueil</a>
 				<a href="index.html#apropos">A propos de nous</a>
 				<a href="index.html#menus">Nos menus</a>
@@ -23,9 +23,12 @@
 				<a href="index.html#avis">Avis de nos clients</a>
 				<a href="index.html#contact">Contact</a>
             </div>
+			<a href="javascript:void(0);" class="icon" onclick="editNav()">
+				<i class="fa fa-bars"></i>
+			</a>
         </nav>
     </header>
-
+	    
 	<!--Section accueil-->
 	<section id="accueil" class="accueil">
 		<div class="accueil_section_text">
@@ -240,6 +243,7 @@
 		</div>
 
 		<script src="assets/js/navbar.js"></script>
+		<script src="assets/js/editNav.js"></script>
 
 	</footer>
 </body>
