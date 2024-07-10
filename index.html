@@ -6,6 +6,7 @@
 	<title>O'Bistrot</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="./assets/img/obistrot.png">
 </head>
 <body>
@@ -30,17 +31,17 @@
     </header>
 	    
 	<!--Section accueil-->
-	<section id="accueil" class="accueil">
-		<div class="accueil_section_text">
-			<h1>O'Bistrot</h1>
-			<p>Cuisine jamaïcaine traditionnelle.</p>
-			<p>Lorem ipsum dolor sit amet. Ex autem soluta aut nulla nisi est quisquam ullam et pariatur voluptatibus qui eligendi adipisci.</p>
-			<a href="#contact" class="button">Réserver</a>
-		</div>
+	<section id="accueil" class="accueil" data-aos="fade-up">
+			<div class="accueil_section_text">
+				<h1>O'Bistrot</h1>
+				<p>Cuisine jamaïcaine traditionnelle.</p>
+				<p>Lorem ipsum dolor sit amet. Ex autem soluta aut nulla nisi est quisquam ullam et pariatur voluptatibus qui eligendi adipisci.</p>
+				<a href="#contact" class="button">Réserver</a>
+			</div>
 	</section>
 
 	<!--Section A propos-->
-	<section id="apropos" class="apropos">
+	<section id="apropos" class="apropos" data-aos="fade-up">
 		<div class="apropos_section_title">
 			<h2>A propos de nous</h2>
 		</div>
@@ -70,7 +71,7 @@
 		</div>
 	
 		<!--A propos photo-->
-		<div class="apropos_section_photo">
+		<div class="apropos_section_photo" data-aos="flip-left">
 			<img src="./assets/img/life-style.jpg" alt="photo du cuisinier d'O'Bistrot" title="photo du cuisinier d'O'Bistrot">
 		</div>
 
@@ -78,7 +79,7 @@
 	</section>
 	
 	<!--Section menu -->
-	<section id="menus" class="menu">
+	<section id="menus" class="menu" data-aos="fade-up">
 		<div class="menu_section_text">
 			<h2>Nos menus</h2>
 		</div>
@@ -134,7 +135,7 @@
 	</section>
 
 	<!--Section le mot du chef-->
-	<section id="citation" class="citation">
+	<section id="citation" class="citation" data-aos="fade-up">
 		<div class="citation_section_title">
 			<h2>Le mot du chef</h2>
 		</div>
@@ -151,14 +152,14 @@
 	</section>
 
 	<!--Services section -->
-	<section id="services" class="services">
+	<section id="services" class="services" data-aos="fade-up">
 		<div class="services_section_text">
 			<h2>Nos services</h2>
 		</div>
 
 		<!--Icôns-->
 		<div class="icon">
-			<article>
+			<article data-aos="flip-left">
 				<div class="i orange_icon_bg"><i class="fa-solid fa-utensils customicon"></i></div>
 				<h3 class="icon_title">Service à table<br></h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -166,7 +167,7 @@
 				Ut a fermentum nisi, eget tristique mi. Aliquam erat volutpat</p>
 				<a href="#contact" class="custom_button orange">Réserver</a>
 			</article>
-			<article>
+			<article data-aos="flip-left">
 				<div class="i red_icon_bg"><i class="fa-solid fa-martini-glass-citrus"></i></div>
 				<h3 class="icon_title">Cocktails</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -174,7 +175,7 @@
 				Ut a fermentum nisi, eget tristique mi. Aliquam erat volutpat</p>
 				<a href="#contact" class="custom_button red">Réserver</a>
 			</article>
-			<article>
+			<article data-aos="flip-left">
 				<div class="i blue_icon_bg"><i class="fa-solid fa-wifi"></i></div>
 				<h3 class="icon_title">Wifi</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -187,7 +188,7 @@
 	</section>
 
 	<!--Section avis-->
-	<section id="avis" class="avis">
+	<section id="avis" class="avis" data-aos="fade-up">
 		<div class="avis_section_title">
 			<h2>Les témoignages de nos clients</h2>
 		</div>
@@ -198,7 +199,7 @@
 	</section>
 
 	<!--Contact section-->
-	<section id="contact" class="contact">
+	<section id="contact" class="contact" data-aos="fade-up">
 		<div class="contact_section_text"></div>>
 			<h2>Contactez-nous</h2>
 		</div>
@@ -217,7 +218,7 @@
 
 	<!-- Footer -->
 	<footer>
-		<div class="footer">
+		<div class="footer" data-aos="fade-up">
 			<div class="footer_element">
 				<h4>O'Bistrot</h4>
 				<ul>
@@ -242,9 +243,11 @@
 			</div>
 		</div>
 
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="assets/js/navbar.js"></script>
 		<script src="assets/js/editNav.js"></script>
 
 	</footer>
+	<script>AOS.init();</script>
 </body>
 </html>
